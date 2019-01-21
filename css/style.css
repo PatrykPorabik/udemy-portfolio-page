@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+.header {
+    background-color: #29a6dc;
+    background-image: url(../images/photo1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 26px bottom;
+    width: 100vw;
+    color: #ffffff;
+    height: 100vh;
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+}
+.main-heading {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 12%;
+}
+.main-subheading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+.h2-thinner {
+    font-weight: 300;
+    display: block;
+}
+.header-button {
+    border: 1px solid #ffffff;
+    font-family: Saira;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 15px;
+}
+.services {
+    width: 80vw;
+    margin: 0 auto;
+}
+.section-heading {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+.services-image {
+    width: 200px;
+}
+.section-subtitle {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+}
+.services-description {
+    font-family: Saira, sans-serif;
+    font-size: 12px;
+    margin-bottom: 35px;
+}
+.projects {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+.projects > .section-heading {
+    padding: 25px 0;
+    line-height: 1;
+}
+.project-box, .inverted-project-box {
+    display: flex;
+    width: 100%;
+}
+.project-box {
+    flex-wrap: wrap;
+    background-color: #ff4f2c;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.inverted-project-box {
+    flex-wrap: wrap-reverse;
+    text-align: left;
+    background-color: #0170ba;
+    margin-bottom: 20px;
+}
+.project-image {
+    width: 100%;
+    display: block;
+}
+.project-description {
+    margin-right: 10vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.project-name {
+    font-size: 18px;
+    font-family: 'Saira', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid #ffffff;
+    padding-left: 10vw;
+    padding-bottom: 5px;
+}
+.project-overview {
+    font-size: 12px;
+    padding-left: 10vw;
+    margin-top: 25px;
+}
+.testimonials {
+    background-image: url(../images/motto.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 205px 30px 205px 30px;
+    position: relative;
+}
+.overlay {
+    background: rgba(0,63,114,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 87px 30px 87px 30px;
+}
+.testimonials-heading {
+    margin-bottom: 70px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.testimonials-text {
+    font-family: 'Saira', sans-serif;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.signature {
+    font-family: 'Saira', sans-serif;
+    font-size: 11px;
+}
+.hobby .section-heading {
+    text-transform: uppercase;
+    font-family: 'Saira Condensed', sans-serif;
+    margin-bottom: 35px;
+}
+.hobby-box-container {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+.hobby-image {
+    width: 100%;
+    display: block;
+}
+.hobby-text-first, .hobby-text-second, .hobby-text-third, .hobby-text-fourth {
+    display: none;
+}
+.hobby-box-first, .hobby-box-second, .hobby-box-third, .hobby-box-fourth {
+    position: relative;
+    width: 50%;
+}
+.hobby-text-first, .hobby-text-second, .hobby-text-third, .hobby-text-fourth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(255, 79, 44,0.5);
+    width: 100%;
+    height: 100%;
+    line-height: 14;
+    font-family: Saira;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.hobby-box-first:hover .hobby-text-first, .hobby-box-second:hover .hobby-text-second, .hobby-box-third:hover .hobby-text-third, .hobby-box-fourth:hover .hobby-text-fourth {
+    display: block;
+}
+.hobby-box-first:hover .hobby-image, .hobby-box-second:hover .hobby-image, .hobby-box-third:hover .hobby-image, .hobby-box-fourth:hover .hobby-image {
+    filter: blur(5px);
+}
+.contact {
+    background-color: #111111;
+}
+.contact .section-heading {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 0;
+}
+.name-input, .email-input, .message-textarea {
+    width: 80vw;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+}
+.name-input::placeholder, .email-input::placeholder, .message-textarea::placeholder {
+    color: #000000;
+}
+.submit-button {
+    width: 80vw;
+    background: transparent;
+    color: #ffffff;
+    height: 40px;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+}
+.contact-line-container {
+    width: 55vw;
+    margin: 0 auto;
+    list-style-type: none;
+    margin-top: 40px;
+    text-align: left;
+    padding-bottom: 40px;
+}
+.contact-line {
+    font-size: 14px;
+    font-family: 'Saira', sans-serif;
+    color: #ffffff;
+    display: flex;
+    align-content: center;
+    margin-bottom: 20px;
+}
+.contact-text {
+    align-self: center;
+}
+.contact-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    opacity: 0.8;
+}
+.contact-line:hover {
+    opacity: 0.5;
+}
+.footer {
+    background-color: #29a6dc;
+    font-family: 'Saira', sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media (orientation: landscape) {
+    .header {
+        text-align: left;
+        text-indent: 30px;
+        background-position: right bottom;
+    }
+    .header-button {
+        margin-left: 30px;
+    }
+    .services {
+        width: 100vw;
+        padding: 0 10px;
+    }
+    .services-container {
+        display: flex;
+    }
+    .project-overview {
+        margin-top: 10px;
+    }
+    .project-box, .inverted-project-box {
+        flex-wrap: nowrap;
+        width: 100vw;
+    }
+    .project-image-container {
+        width: 50%;
+    }
+    .project-description {
+        width: 50%;
+        padding-bottom: 18px;
+        padding-top: 11px;
+    }
+}
+@media (min-width:768px) {
+    .header {
+        background-size: 60vh;
+        background-position: 154px bottom;
+    }
+    .main-heading {
+        font-size: 50px;
+    }
+    .main-subheading {
+        font-size: 30px;
+    }
+    .header-button {
+        font-size: 20px;
+    }
+    .section-heading {
+        font-size: 30px;
+    }
+    .section-subtitle {
+        font-size: 26px;
+    }
+    .services-description {
+        font-size: 18px;
+    }
+    .project-name {
+        font-size: 22px;
+    }
+    .project-overview {
+        font-size: 16px;
+    }
+    .testimonials-heading {
+        font-size: 30px;
+    }
+    .testimonials-text {
+        font-size: 22px;
+    }
+    .signature {
+        font-size: 15px;
+    }
+    .hobby-text-first, .hobby-text-second, .hobby-text-third, .hobby-text-fourth {
+        font-size: 25px;
+        line-height: 21;
+    }
+    .contact-line-container {
+        width: 20vw;
+    }
+}
+@media (min-width: 1024px) {
+    .header {
+        background-position: right bottom;
+        height: 60vh;
+        text-align: left;
+        padding-left: 10vw;
+    }
+    .project-box, .inverted-project-box  {
+        flex-wrap: nowrap;
+    }
+    .services .section-heading {
+        margin-bottom: 35px; 
+    }
+    .services-container {
+        display: flex;
+    }
+    .project-description {
+        width: 50%;
+    }
+    .project-image-container {
+        width: 50%;
+    }
+
+    .project-overview {
+        font-size: 21px;
+        padding-left: 1vw;
+        margin-top: 14px;
+        padding-bottom: 14px;
+    }
+}
+@media (min-width: 1024px) and (orientation: portrait) {
+    .header {
+        background-size: 45vh;
+        height: 48vh;
+    }
+
+}
