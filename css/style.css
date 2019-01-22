@@ -12,7 +12,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 26px bottom;
-    width: 100vw;
+    width: 100%;
     color: #ffffff;
     height: 100vh;
     font-family: 'Saira Condensed', sans-serif;
@@ -111,6 +111,7 @@ body {
     font-size: 12px;
     padding-left: 10vw;
     margin-top: 25px;
+    font-family: 'Saira', sans-serif;
 }
 .testimonials {
     background-image: url(../images/motto.jpg);
@@ -257,7 +258,7 @@ body {
         margin-left: 30px;
     }
     .services {
-        width: 100vw;
+        width: 100%;
         padding: 0 10px;
     }
     .services-container {
@@ -268,7 +269,7 @@ body {
     }
     .project-box, .inverted-project-box {
         flex-wrap: nowrap;
-        width: 100vw;
+        width: 100%;
     }
     .project-image-container {
         width: 50%;
@@ -361,4 +362,26 @@ body {
         height: 48vh;
     }
 
+}
+@media (min-width: 1366px) {
+    .header {
+        height: 90vh;
+        background-size: 75vh;
+    }
+    .project-image-container {
+        width: 63%;
+    }
+    .inverted-project-box .project-description {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        text-align: right;
+        margin-right: 0;
+    }
+    .inverted-project-box .project-name {
+        padding-right: 10vw;
+    }
+    .inverted-project-box .project-overview {
+        padding-right: 1vw;
+    }
 }
