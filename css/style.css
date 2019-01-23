@@ -367,6 +367,12 @@ body {
     .header {
         height: 90vh;
         background-size: 75vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .main-heading {
+        padding-top: 0;
     }
     .project-image-container {
         width: 63%;
@@ -383,5 +389,22 @@ body {
     }
     .inverted-project-box .project-overview {
         padding-right: 1vw;
+    }
+    .hobby-box-first, .hobby-box-second, .hobby-box-third, .hobby-box-fourth {
+    line-height: 20;
+    }
+    .contact-container {
+        display: flex;
+        justify-content: center;
+    }
+    .form-container, .contact-information-box {
+        width: 50%;
+    }
+    .name-input, .email-input, .message-textarea {
+        width: 80%;
+    }
+    .submit-button {
+        margin-bottom: 50px;
+        width: 50%;
     }
 }
